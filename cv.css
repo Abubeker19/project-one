@@ -1,0 +1,338 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e1e1e; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #e0e0e0; /* Light link color */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f5a623; /* Highlight color for links */
+}
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #e0e0e0; /* Light text color */
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    object-fit: cover;
+    margin-right: 1rem;
+    border: 4px solid #333; /* Border to match dark theme */
+}
+
+.profile-text {
+    max-width: 600px;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-in Animation for Projects */
+.slide-in {
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.project {
+    margin-bottom: 1rem;
+    background-color: #2c2c2c; /* Darker background for projects */
+    padding: 1rem;
+    border-radius: 8px; /* Rounded corners for better design */
+    border: 1px solid #444; /* Slightly lighter border */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem; /* Add margin to prevent overlap with footer */
+}
+
+form label {
+    margin: 0.5rem 0;
+    color: #e0e0e0; /* Light label color */
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #444; /* Darker border */
+    background-color: #2c2c2c; /* Dark background for inputs */
+    color: #e0e0e0; /* Light text color */
+}
+
+form button {
+    padding: 0.5rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+form button:hover {
+    background-color: #f5a623; /* Highlight color for button */
+}
+
+/* Video Section Styles */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 2rem 0; /* Margin for spacing */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #e0e0e0; /* Light text color */
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10; /* Ensures footer stays on top */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow for separation */
+}
+
+/* Additional adjustments to prevent footer overlap */
+body::after {
+    content: "";
+    display: block;
+    height: 3rem; /* Space for footer to ensure it's not overlapping the content */
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e1e1e; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #e0e0e0; /* Light link color */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f5a623; /* Highlight color for links */
+}
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #e0e0e0; /* Light text color */
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    object-fit: cover;
+    margin-right: 1rem;
+    border: 4px solid #333; /* Border to match dark theme */
+}
+
+.profile-text {
+    max-width: 600px;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-in Animation for Projects */
+.slide-in {
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.project {
+    margin-bottom: 1rem;
+    background-color: #2c2c2c; /* Darker background for projects */
+    padding: 1rem;
+    border-radius: 8px; /* Rounded corners for better design */
+    border: 1px solid #444; /* Slightly lighter border */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0;
+    color: #e0e0e0; /* Light label color */
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #444; /* Darker border */
+    background-color: #2c2c2c; /* Dark background for inputs */
+    color: #e0e0e0; /* Light text color */
+}
+
+form button {
+    padding: 0.5rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #f5a623; /* Highlight color for button */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #e0e0e0; /* Light text color */
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    color: #e0e0e0;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-size: 5.6rem;
+}
+
+.social-media a:hover {
+    color: #23f551; /* Highlight color for social media icons */
+}
